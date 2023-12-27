@@ -1,0 +1,22 @@
+[package]
+name = "learning_rust"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "bin"
+#path = "src/guess_the_number.rs"
+#path = "src/web_scraper.rs"
+path = "src/morse_translater.rs"
+#path = "src/sorting_algorithms.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = { version = "0.8.5", features = [] }
+reqwest = { version = "0.11.23", features = ["blocking"] }
+scraper = "0.18.1"
+rodio = "0.17.3"
+time = "0.3.31"
+graplot = "0.1.22"
+
